@@ -1,0 +1,434 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header{
+    display: flex;
+    background-color: rgb(50, 50, 50);
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.nav{
+    display: flex;
+    position: relative;
+    margin-left: 800px;
+    font-size: 1.562rem;
+    padding-right: 25px;
+}
+.section{
+    position: relative;
+    background-color: rgb(243, 243, 243);
+    height: 750px;
+}
+.text1{
+    position: absolute;
+    margin-top: 275px;
+    margin-left: 60px;
+}
+.frame{
+    display: flex;
+    align-items: flex-start;
+    gap: .1rem;
+}
+.text{
+    position: relative;
+    margin-top: 15px;
+    left: 30px;
+}
+.text,span{
+    font-size: 2.35rem;
+}
+.ul{
+    height: 100px;
+    list-style: none;
+    overflow: hidden;
+}
+.ul li{
+    position: relative;
+    height: 100px;
+    animation: to-top 12s steps(4) infinite;
+}
+.ul li span{
+    color: red;
+}
+.ul li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(243, 243, 243);
+    border-left: 3px solid white;
+    animation: to-right 3s steps(21) infinite;
+}
+@keyframes to-right{
+    40%, 60%{
+        left: calc(100% + 50px);
+    }
+    95%{
+        left: 0;
+    }
+}
+@keyframes to-top{
+    100%{
+        transform: translateY(-400%);
+    }
+}
+button{
+    border-radius: 15px;
+    border: none;
+    width: 130px;
+    height: 45px;
+    font-size: 1.3rem;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 30px;
+    cursor: pointer;
+    background-color: rgb(220, 220, 220);
+}
+button:hover{
+    background-color: rgb(198, 198, 198);
+}
+.profile div{
+    display: block;
+    padding-bottom: 10px;
+}
+.profile{
+    position: relative;
+    margin-top: -500px;
+    margin-left: 1300px;
+}
+.about{
+    position: relative;
+    margin-top: 259px;
+    height: 800px;
+    background-color: white;
+}
+.img{
+    width: 18%;
+    object-fit: contain; 
+    border-radius: 50px;
+    float: right;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top: 53px;
+}
+
+.aboutMe{
+    position: absolute;
+    margin-top: 130px;
+    font-size: 1.725rem;
+    margin-left: 50px;
+    text-align: justify;
+    padding-right: -55px;
+}
+h1{
+    font-size: 3.625rem;
+}
+.project{
+    position: relative;
+    margin-top: -60px;
+    padding-top: 10px;
+    height: 1100px;
+    background-color:rgb(243, 243, 243);
+    border: none;
+}
+.img2{
+    width: 70%;
+    object-fit: contain;
+    border-radius: 10px;
+    padding-top: 40px;
+}
+.project1{
+    font-size: 2.625rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+.wrapper{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.box{
+    width: 290px;
+    height: 320px;
+    border: none;
+    font-size: 1.13rem;
+    margin-right: 50px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px rgb(220, 220, 220), 0 4px 5px rgb(198, 198, 198);
+}
+.qualification{
+    background-color: white;
+    height: 790px;
+    position: relative;
+    padding-top: 40px;
+}
+.academic{
+    font-size: 1.325rem;
+}
+.sch{
+    font-size: 1.825rem;
+}
+.key{
+    font-size: 1.325rem;
+}
+.skills{
+    font-size: 1.825rem;
+}
+.app{
+    font-size: 1.325rem;
+}
+.web{
+    font-size: 1.825rem;
+}
+.qual{
+    margin-left: 60px;
+}
+.footer{
+    height: 300px;
+    position: relative;
+    margin-top: -40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.cont{
+    font-size: 2.625rem;
+}
+.mail{
+    font-size: 1.325rem;
+}
+.top{
+    position: fixed;
+    top: 750px;
+    right: 30px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+.nav a{
+    color: white;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 768px) {
+    .header{
+        height: 43px;
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav{
+        display: flex;
+    }
+    .text,span{
+        font-size: 1.245rem;
+    }
+    .text{
+        margin-top: 16px;
+    }
+    .text1{
+        margin-top: 235px;
+        margin-left: 5px;
+        width: 288px;
+    }
+    .ul li::after{
+        height: 25px;
+    }
+    .nav{
+        display: flex;
+        position: relative;
+        margin-left: 65px;
+        font-size: .62rem;
+    }
+    .profile{
+        margin-left: 354px;
+        width: 40px;
+    }
+    .profile, i, .fa-4x{
+        font-size: 7px;
+    }
+    button{
+        width: 85px;
+        height: 35px;
+        font-size: .78rem;
+    }
+    .logo, i,.fa-4x{
+        font-size: 7px;
+    }
+    .aboutMe{
+        font-size: .825rem;
+        margin-top: 100px;
+        margin-left: 13px;
+        margin-right: -40px;
+        width: 382px;
+    }
+    .about{
+        height: 520px;
+    }
+    h1{
+        font-size: 1.525rem;
+    }
+    .img{
+        margin-top: 60px;
+        width: 35%;
+        float: right;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .project{
+        height: 1920px;
+    }
+    .project1{
+        font-size: 1.425rem;
+        margin: auto;
+        margin-top: 30px;
+        width: 200px;
+    }
+    .wrapper{
+        margin-left: 19px;
+        margin-top: 10px;
+        padding-top: 2px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 375px;
+    }
+    .box{
+        font-size: .83rem;
+        width: 230px;
+        height: 280px;
+        padding: 0 8px;
+        margin: auto;
+        margin-bottom: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+    hr{
+        width: 200px;
+        margin-top: -25px;
+        height: 0;
+    }
+    .box a{
+        margin-top: -30px;
+    }
+    .img2{
+        width: 68%;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .qual{
+        margin-left: -1px;
+        padding: 0 5px;
+    }
+    .qualification{
+        height: 600px;
+    }
+    .academic{
+        font-size: .925rem;
+        padding-right: 8px;
+    }
+    .key{
+        font-size: .925rem;
+        padding-right: 8px;
+    }
+    .app{
+        font-size: .925rem;
+        padding-right: 8px;
+    }
+    .sch{
+        font-size: 1.025rem;
+        margin-left: 5px;
+        
+    }
+    .skills{
+        font-size: 1.025rem;
+        padding: 10px;
+    }
+    .web{
+        font-size: 1.025rem;
+        padding: 10px;
+    }
+    .footer{
+        height: 150px;
+    }
+    .cont{
+        font-size: 1.625rem;
+        margin-top: 5px;
+    }
+    .mail{
+        font-size: .925rem;
+    }
+    .top{
+        position: fixed;
+        left: 360px;
+        width: 35px;
+    }
+    .top, i,.fa-4x{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 392px) and (min-width: 350px){
+    .text1{
+        margin-left: -13px;
+    }
+    .aboutMe{
+        font-size: .825rem;
+        margin-top: 100px;
+        margin-left: 5px;
+        margin-right: -40px;
+        width: 342px;
+    }
+    .img{
+        margin-top: 65px;
+        width: 35%;
+        float: right;
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+    .project1{
+        margin-left: 80px;
+    }
+    .wrapper{
+        margin-left: 12px;
+    }
+    .box{
+        font-size: .60rem;
+        width: 88px;
+        height: 188px;
+        padding: 8px;
+        margin-right: 10px;
+    }
+    hr{
+        width: 100%;
+        height: 0;
+    }
+    .img2{
+        width: 79%;
+        margin-left: 8px;
+    }
+    .profile{
+        margin-left: 314px;
+        width: 40px;
+    }
+    .top{
+        position: fixed;
+        left: 340px;
+        width: 35px;
+    }
+}
